@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>TerMemeMaker 3 | Rise of the Memes</title>
+
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <h3 class="center-align">The TerMemeMaker</h3>
+        <p class="center-align">Fill out the form to create your own meme.
+          <a href="https://youtu.be/-Lz21oKzW78?t=47s" target="_blank">No problemo!</a>
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <form class="col s12" id="form" action="#" method="">
+        <div class="row">
+          <div class="input-field col s12">
+            <input placeholder="I need your clothes, your boots, and an image URL. Actually, forget the clothes and the boots. Just give me an image URL."
+              id="image_url" type="text">
+            <label for="image_url">Image URL</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input placeholder="Enter text for the top of the meme. I'll be back. . . for the bottom of the meme." id="top_text" type="text">
+            <label for="top_text">Top Text</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input placeholder="I'm back. . . for the bottom of the meme. Enter text if you want to live. . . a life of laughter." id="bottom_text"
+              type="text">
+            <label for="bottom_text">Bottom Text</label>
+          </div>
+        </div>
+        <button class="btn waves-effect waves-light submit" type="submit" name="action">Submit
+          <i class="material-icons right">send</i>
+        </button>
+        <p>Click on the image to delete your meme.
+          <a href="https://www.youtube.com/watch?v=LRxaXmXvjnU" target="_blank">Hasta la vista, baby!</a>
+        </p>
+      </form>
+    </div>
+    <div class="row">
+      <div class="col s12">
+        <div class="memes" id="memes">
+          <div class="card" id="0">
+            <span class="card__image" style="background-image: url(https://i.stack.imgur.com/zwmLS.jpg);">
+              <span class="card__text">
+                <h3 class="card__text--top">I'll never upgrade to Windows 10.</h3>
+              </span>
+              <span class="card__text">
+                <h3 class="card__text--bottom">I still love vista, baby.</h3>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>
